@@ -13,13 +13,17 @@ class Formula(Scene):
         formula_tex2.scale(1)
         self.play(Write(formula_tex1))
         self.wait()
-        self.play(Transform(formula_tex1, formula_tex2))
-        self.wait()
         self.clear()
+        self.play(Write(formula_tex2))
+        self.wait()
+        self.play(formula_tex2.to_edge, UP)
         self.play(Write(formula_tex3))
         self.wait()
-        self.clear()
+        self.play(formula_tex3.to_edge, LEFT)
+        formula_tex4.to_edge(RIGHT)
         self.play(Write(formula_tex4))
         self.wait()
+
+
 
 
