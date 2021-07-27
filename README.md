@@ -1,2 +1,3 @@
 # MyAnimations
-Some animations from manim for tests and videos.
+
+Various animations across platforms for tests and eventually videos. 
